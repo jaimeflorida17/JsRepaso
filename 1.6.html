@@ -9,27 +9,45 @@
 <body>
 
     <script>
-
-        var numeroentero;
+    
+    var repetir;
+    var numeroentero;
+    
+        
 
         function number(numero){
 
             numeroentero = (parseInt(prompt("Pasame un numero entero")));
+            
+            Math.round(numeroentero);
+            
+        
+        }
 
-                Math.round(numeroentero);
+        function comprobacion(par){
 
-                return (numeroentero);
+            number(numeroentero);
+
+
+
+            if(numeroentero % 2 == 0){
+
+                console.log(numeroentero + " Es numero par");
+            
             }
-
-        function comprobacion(){
-
-            if(number(numeroentero) % 2){
-                alert(numeroentero + "Es numero par");
-            }else{
-                alert(numero + "Es un numero impar");
+            else{
+            
+                console.log(numeroentero + " Es un numero impar");
+            
             }
 
         }
+
+        comprobacion(numeroentero);
+
+
+            
+        alert("Terminada ejecucion");
 
   
   </script>
