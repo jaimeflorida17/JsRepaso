@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var numero;
+        var numerovalidado;
+        var dado;
+
+        function numerodado(number){
+            
+            numero = parseInt(prompt("Dame un numero del 1 al 12"));
+
+            if(numero>=1 && numero<=12){
+
+                numerovalidado = numero;
+
+                console.log(numerovalidado);
+            }else{
+
+                alert("El numero no es correcto, debe estar entre el 1 y el 12");
+
+            }
+            
+        }
+
+
+        function lanzar_dado(aleatorio){
+           
+           numerodado(numero) 
+
+           dado = Math.round(Math.random() * (12 - 1));
+
+           console.log(dado);
+           
+            if(numerovalidado == dado){
+
+                alert("Has acertado el numero");
+
+            }else{
+
+                alert("Lastima vuelvalo a intentar");
+
+            }
+
+        }
+
+        lanzar_dado(dado);
+
+
+    </script>
+
+    
+</body>
+</html>
